@@ -1,0 +1,213 @@
+@import url('https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap');
+
+html {
+    background-color: #eee;
+    cursor: pointer;
+    overflow: hidden;
+}
+
+header {
+    font-family: 'Fjalla One', sans-serif;
+    font-size: 50px;
+    color: #fff;
+    background-color: #9932cc;
+    padding: 1em 2em 0.5em;
+    height: 2em;
+}
+
+button {
+    font-family: 'Fjalla One', sans-serif;
+    font-size: 25px;
+    color: #fff;
+    background-color: #9932cc;
+    border: 3px solid #9932cc;
+    border-radius: 20px;
+    height: 75px;
+    width: 150px;
+    position: absolute;
+    top: 50%
+}
+
+.content {
+    font-family: 'Fjalla One', sans-serif;
+    padding: 2em;
+    margin: auto;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 30px;
+    color: #4B0082;
+    position: relative;
+}
+
+#test {
+    min-height: 300px;
+    display: flex;
+    justify-content: center;
+}
+
+.quiz {
+    position: relative;
+    display: grid;
+    width: 700px;
+    height: 400px;
+    gap: 1em;
+    align-items: center;
+    grid-template-rows: 4em 3em 3em 3em;
+}
+
+.quiz div {
+    padding: 1em;
+}
+
+.memory {
+    display: grid;
+    gap: 2em;
+    grid-template-columns: 50% 50%;
+}
+.seeRead {
+    display: grid;
+    gap: 2em;
+    grid-template-columns: 40% 40% 20%;
+    grid-row: 1fr;
+    margin-top: 6em;
+}
+
+.shapes {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1em;
+}
+
+.flags,
+.shapes {
+    grid-column: 1 / span 1;
+}
+
+.guess,
+.guess2 {
+    grid-column: 2 / span 1;
+}
+
+.clock {
+    grid-column: 3 / span 1;
+    grid-row: 1;
+    width: 150px;
+    font-size: 40px;
+}
+
+.flags,
+.guess {
+    display: grid;
+    gap: 1em;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.flag {
+    position: relative;
+}
+
+.swe {
+    height: 100px;
+    width: 150px;
+    background-color: #006aa7;
+}
+
+.swe .part1 {
+    position: absolute;
+    background-color: #fecc00;
+    height: 20px;
+    width: 150px;
+    top: 40px;
+    left: 0;
+}
+
+.swe .part2 {
+    position: absolute;
+    background-color: #fecc00;
+    height: 100px;
+    width: 20px;
+    top: 0;
+    left: 40px;
+}
+
+.jap {
+    height: 100px;
+    width: 150px;
+    background-color: #fff;
+}
+
+.jap .part1 {
+    position: absolute;
+    background-color: #bc002d;
+    border-radius: 50%;
+    height: 60px;
+    width: 60px;
+    top: 20px;
+    left: 45px;
+}
+
+.gui {
+    height: 100px;
+    width: 150px;
+    background-color: #ce1126;
+}
+
+.gui .part1 {
+    position: absolute;
+    background-color: #fcd116;
+    height: 100px;
+    width: 50px;
+    top: 0;
+    left: 50px;
+}
+
+.gui .part2 {
+    position: absolute;
+    background-color: #009460;
+    height: 100px;
+    width: 50px;
+    top: 0;
+    left: 100px;
+}
+
+.hide {
+  position: absolute;
+    height: 100px;
+    width: 150px;
+    background-color: none;
+    z-index: 3;
+}
+
+.square {
+    height: 75px;
+    width: 75px;
+}
+
+.circle {
+    height: 75px;
+    width: 75px;
+    border-radius: 50%;
+}
+
+.red {
+    background-color: red;
+}
+
+.blue {
+    background-color: blue;
+}
+
+.green {
+    background-color: green;
+}
+
+.yellow {
+    background-color: yellow;
+}
+
+.purple {
+   background-color: purple;
+}
